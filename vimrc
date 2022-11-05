@@ -13,3 +13,4 @@ inoremap u<space> _
 inoremap U<space> _
 set ignorecase
 set smartcase
+inoremap ,+ <=
