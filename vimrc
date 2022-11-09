@@ -8,7 +8,7 @@ inoremap kk <esc>
 set laststatus=2 "show the name of the file at the bottom
 set tags=./.tags;$HOME "set tags search to recurse backward
 set statusline+=%F "F for full path f for path relitive to working directory
-inoremap *** /**************************************************<enter>* Title:<enter>* Summary:<enter>* Param:<enter>* Note:<enter>**************************************************/
+inoremap *** /**************************************************<enter>* Title:<enter>* Summary:<enter>* Param:<enter>* Return:<enter>**************************************************/
 inoremap ==== ============================================================
 inoremap u<space> _
 inoremap U<space> _
