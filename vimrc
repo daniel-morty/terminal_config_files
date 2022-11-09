@@ -15,3 +15,5 @@ inoremap U<space> _
 set ignorecase
 set smartcase
 inoremap ,+ <=
+hi! Note term=reverse ctermbg=13 gui=undercurl guisp=Magenta
+match Note /!note/
