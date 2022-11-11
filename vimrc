@@ -12,8 +12,15 @@ inoremap *** /**************************************************<enter>* Title:<
 inoremap ==== ============================================================
 inoremap u<space> _
 inoremap U<space> _
+
+"used for case insensitive searching if typed in lowercase
+"if Upper case letters are used it will be case sensitive
 set ignorecase
 set smartcase
+
+"common VHDL type
 inoremap ,+ <=
+
+"use :highlight to get more info on highlight groups, also :match
 hi! Note term=reverse ctermbg=13 gui=undercurl guisp=Magenta
 match Note /!note/
