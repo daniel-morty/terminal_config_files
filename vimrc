@@ -25,3 +25,9 @@ inoremap ,+ <=
 "use :highlight to get more info on highlight groups, also :match
 hi! Note term=reverse ctermbg=13 gui=undercurl guisp=Magenta
 match Note /!note/
+
+" fast window switching
+nmap <C-h> <C-w>h
+nmap <C-j> <C-w>j
+nmap <C-k> <C-w>k
+nmap <C-l> <C-w>l
