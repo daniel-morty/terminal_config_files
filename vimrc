@@ -35,9 +35,7 @@ inoremap ,+ <=
 "sets up another highlight group (like TODO is always highlighted)
 hi! Note term=reverse ctermbg=13 gui=undercurl guisp=Magenta
 match Note /!note/
-
-" fast window switching if multple files are open in the same session
-nmap <C-h> <C-w>h
-nmap <C-j> <C-w>j
-nmap <C-k> <C-w>k
-nmap <C-l> <C-w>l
+nmap <C-c>h <C-w>h
+nmap <C-c>j <C-w>j
+nmap <C-c>k <C-w>k
+nmap <C-c>l <C-w>l
