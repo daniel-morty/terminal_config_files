@@ -18,7 +18,8 @@ set tags=./.tags;$HOME "set tags search to recurse backward
 
 "function header
 inoremap *** /**************************************************<enter>* Title:<enter>* Summary:<enter>* Param:<enter>* Return:<enter>**************************************************/
-inoremap ==== ============================================================
+inoremap ==== ==================================================================================================
+
 
 "easier way to type an underscore. quickly hit u and then the spacebar
 inoremap u<space> _
