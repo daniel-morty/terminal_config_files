@@ -40,3 +40,9 @@ nmap <C-c>h <C-w>h
 nmap <C-c>j <C-w>j
 nmap <C-c>k <C-w>k
 nmap <C-c>l <C-w>l
+
+"installs plugins added to .vim/bundle 
+execute pathogen#infect()
+
+"hot key for FZF
+map <c-o> :FZF<cr>
