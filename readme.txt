@@ -7,6 +7,9 @@ vimrc instructions
 -the vimrc file can be configured as you would the regular .vimrc file
 -there must be a .vimrc file in the home directory with this line
 	source path/to/terminal_config_files/vimrc
+-pathogen is used to install FZF
+	- the FZF used is found here: https://github.com/junegunn/fzf
+	- vim pathogen and it's documentation is found here: https://github.com/tpope/vim-pathogen
 
 
 
