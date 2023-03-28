@@ -46,3 +46,5 @@ execute pathogen#infect()
 
 "hot key for FZF
 map <c-o> :FZF<cr>
+
+:hi Constant term=bold ctermfg=98 guifg=#e39ff6 gui=bold
