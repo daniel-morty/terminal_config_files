@@ -6,6 +6,7 @@ set rnu		"makes numbers relative to the line you are on
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
+set expandtab
 
 "makes alternate ways to exit insert mode
 inoremap kk <esc>
