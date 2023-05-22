@@ -32,3 +32,13 @@ tmux.conf instructions
 			click edit/new/global
 			trigger Ctrl+Alt+J
 			Action ctrl+a:Shift+p
+
+
+
+ctags
+==================================================================================================
+- install exuberant ctags "sudo apt install exuberant-ctags" or something similar
+- create a .ctags file with these arguments, one per line
+	--recurse yes
+	-f .tags
+
