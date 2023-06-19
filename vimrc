@@ -21,7 +21,7 @@ set tags=./.tags;$HOME "set tags search to recurse backward
 inoremap *** /**************************************************<enter>* Title:<enter>* Summary:<enter>* Param:<enter>* Return:<enter>**************************************************/
 inoremap ==== ==================================================================================================
 
-
+:command Com :normal i///<enter>/// \brief <enter>/// \param <enter>/// \return <enter>///
 "easier way to type an underscore. quickly hit u and then the spacebar
 inoremap u<space> _
 inoremap U<space> _
@@ -47,5 +47,8 @@ execute pathogen#infect()
 
 "hot key for FZF
 map <c-o> :FZF<cr>
+map <c-e> :vertical resize +3<cr>
+map <c-g> :resize +3<cr>
 
 :hi Constant term=bold ctermfg=98 guifg=#e39ff6 gui=bold
+
