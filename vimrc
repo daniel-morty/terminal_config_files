@@ -21,7 +21,7 @@ set tags=./.tags;$HOME "set tags search to recurse backward
 inoremap *** /**************************************************<enter>* Title:<enter>* Summary:<enter>* Param:<enter>* Return:<enter>**************************************************/
 inoremap ==== ==================================================================================================
 
-:command Com :normal i///<enter>/// \brief <enter>/// \param <enter>/// \return <enter>///
+:command Com :normal i///<enter>/// \brief  <enter>/// \param  <enter>/// \return <enter>///
 "easier way to type an underscore. quickly hit u and then the spacebar
 inoremap u<space> _
 inoremap U<space> _
