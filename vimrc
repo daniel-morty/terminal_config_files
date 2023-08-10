@@ -13,7 +13,8 @@ inoremap kk <esc>
 inoremap jj <esc>
 
 set laststatus=2 "show the name of the file at the bottom
-set statusline+=%F "F for full path f for path relitive to working directory
+set statusline+=%p%% "F for full path f for path relitive to working directory
+set statusline+=_workdir/%f "F for full path f for path relitive to working directory
 
 set tags=./.tags;$HOME "set tags search to recurse backward
 
