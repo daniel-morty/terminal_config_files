@@ -24,8 +24,8 @@ inoremap ==== ==================================================================
 
 :command Com :normal i///<enter>/// \brief  <enter>/// \param  <enter>/// \return <enter>///
 "easier way to type an underscore. quickly hit u and then the spacebar
-#inoremap u<space> _
-#inoremap U<space> _
+"inoremap u<space> _
+"inoremap U<space> _
 
 "used for case insensitive searching if typed in lowercase
 "if Upper case letters are used it will be case sensitive
