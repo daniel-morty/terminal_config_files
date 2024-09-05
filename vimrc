@@ -43,15 +43,25 @@ nmap <C-c>j <C-w>j
 nmap <C-c>k <C-w>k
 nmap <C-c>l <C-w>l
 
+map <c-e> :vertical resize +3<cr>
+map <c-g> :resize +3<cr>
+
+map <S-E> :vertical resize -3<cr>
+"map <S-G> :resize -3<cr> " <S-G> jumps to end of file, and I use that often, I think this one is fine to not exist
+
 "installs plugins added to .vim/bundle 
 execute pathogen#infect()
 
 "hot key for FZF
 map <c-o> :FZF<cr>
-map <c-e> :vertical resize +3<cr>
-map <c-w> :vertical resize -3<cr>
-map <c-g> :resize +3<cr>
-map <c-f> :resize -3<cr>
 
 :hi Constant term=bold ctermfg=98 guifg=#e39ff6 gui=bold
+
+"set different backround color for active window
+hi NormalNC ctermbg=234
+augroup winbg 
+    autocmd!
+    autocmd WinEnter * setl wincolor=
+    autocmd WinLeave * setl wincolor=NormalNC
+augroup END
 
