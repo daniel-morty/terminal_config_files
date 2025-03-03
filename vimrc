@@ -11,12 +11,14 @@ set expandtab
 "makes alternate ways to exit insert mode
 inoremap kk <esc>
 inoremap jj <esc>
+inoremap jk <esc>
 
 set laststatus=2 "show the name of the file at the bottom
 set statusline+=%p%% "F for full path f for path relitive to working directory
 set statusline+=_workdir/%f "F for full path f for path relitive to working directory
 
 set tags=./.tags;$HOME "set tags search to recurse backward
+set cscopetag
 
 "function header
 inoremap *** /**************************************************<enter>* Title:<enter>* Summary:<enter>* Param:<enter>* Return:<enter>**************************************************/
