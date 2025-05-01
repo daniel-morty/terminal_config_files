@@ -13,6 +13,8 @@ else
 fi
 echo ""
 
+pushd .
+
 
 #set up tmux
 sudo apt install tmux
@@ -51,6 +53,13 @@ if [ ! -d "$directory" ]; then
 else
     echo "bundle already exists"
 fi
+direcory="plugin"
+if [ ! -d "$directory" ]; then
+    mkdir plugin 
+    echo "created plugin dir"
+else
+    echo "plugin already exists"
+fi
 echo "directories set up correctly"
 echo ""
 
@@ -73,4 +82,8 @@ echo ""
 #get visual incrementer
 git clone git@github.com:jikkujose/vim-visincr.git 
 echo ""
+
+#Asciify
+popd
+cp -r Asciify ~/.vim/plugin
 echo "good to go!"
