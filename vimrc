@@ -67,3 +67,8 @@ augroup winbg
     autocmd WinLeave * setl wincolor=NormalNC
 augroup END
 
+function! Strip_last(start, end)
+    execute a:start . "," . a:end . "s/.\s*$//g"
+endfunction
+xnoremap <Leader>d :<C-u>call Strip_last(line("'<"), line("'>"))<CR>
+
