@@ -1,17 +1,5 @@
 #!/bin/bash
 
-#check that we will be able to clone things
-echo "has github been set up with ssh? (y/n)"
-read user_input
-
-if [ $user_input = "n" ]; then
-    echo "then why are you here?"
-    exit 1
-else
-    echo "great, i'll proceed then"
-    sleep 2
-fi
-echo ""
 
 pushd .
 
@@ -66,7 +54,7 @@ echo ""
 #get pathogen (needed to handle plugins)
 cd ~/applications
 echo "attempting to clone pathogen"
-git clone git@github.com:tpope/vim-pathogen.git
+git clone https://github.com/tpope/vim-pathogen.git
 cp vim-pathogen/autoload/pathogen.vim ~/.vim/autoload/
 echo ""
 
@@ -74,16 +62,16 @@ echo ""
 #just placing it in the bundle installs it to vim, but we want it in the terminal too
 #so that's why we have to run the installer
 cd ~/.vim/bundle
-git clone git@github.com:junegunn/fzf.git
+git clone https://github.com/junegunn/fzf.git
 ./fzf/install
 echo ""
 
 
 #get visual incrementer
-git clone git@github.com:jikkujose/vim-visincr.git 
+git clone https://github.com/jikkujose/vim-visincr.git
 echo ""
 
 #Asciify
 popd
-cp -r Asciify ~/.vim/plugin
+cp -r asciify ~/.vim/plugin
 echo "good to go!"
